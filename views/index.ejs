@@ -1,0 +1,29 @@
+<section class="home-section">
+  <h1 class="text-center mb-4 pt-4">Highscores</h1>
+
+  <% highscores.forEach(highscore=> { %>
+
+    <a href="/games/<%=highscore.url_slug %>">
+      <div class="container">
+        <div class="game-card">
+          <div class="m-2 p-2">
+            <div class="d-flex justify-content-between">
+              <p class="flex-start fw-bolder ">
+                <%= highscore.title %>
+              </p>
+              <p class="flex-end fw-bolder">
+                <%= highscore.highscore %>
+              </p>
+            </div>
+            <div class="d-flex">
+              <p>
+                <%= highscore.player %>, <%= highscore.score_date %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <% }) %>
+
+</section>

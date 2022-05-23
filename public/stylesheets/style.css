@@ -1,0 +1,174 @@
+/* * {
+  margin:0px;
+  padding:0px;
+}
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+h2{
+  padding: 10px;
+  margin: 20px;
+}
+.search-bar {
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+.score-list, .search-list {
+  width: 90%;
+  margin: auto;
+}
+.score-list, h2, .search-list {
+  font-family: 'Press Start 2P',
+  cursive;
+}
+.form-control {
+  color: #484a77;
+  border: 1px solid #484a77;
+}
+.score-list {
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+}
+.score-card:hover {
+  transform: translateX(8px);
+  transition-duration: 0.3s;
+}
+.score-card{
+  background-color: #5b05ef;
+  padding: 10px;
+}
+.score-list a{
+color: white;
+}
+
+.score-list a, .search-list a {
+ 
+  text-decoration: none;
+}
+.score-card, .search-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;  
+}
+.search-card{
+  border: 1px solid black;
+}
+
+.search-list a {
+  color: black;
+}
+.search-list{
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.details-section{
+  padding: 20px;
+  margin: 10px;
+}
+
+.game-description{
+  width:85%;
+}
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+}
+.home-section, .details-section h2, .details-section h1, .container {
+  font-family: monospace;
+}
+.home-section, .search-section {
+  margin:20px 0 30px 0;
+}
+
+
+.logo-container img {
+  margin:10px;
+ 
+}
+.search-bar {
+margin: 10px 0 20px 0;
+border-radius: 6px;
+cursor:pointer;
+}
+
+.game-card, .score-card, .search-card {
+  margin-bottom: 12px;
+  border: 3px solid #550eed;
+  border-radius: 6px;
+  font-size: 1.5em;
+  color:rgb(17, 1, 43);
+ 
+}
+.score-card{
+  border: 3px solid magenta;
+}
+.search-card{
+  border: 3px solid rgb(160, 22, 215);
+}
+.game-card:hover, .search-card:hover {
+  transform: translateX(8px);
+  transition-duration: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.game-description {
+  width:85%;
+}
+
+.details-section {
+  margin: 40px 20px;
+}
+.game-info{
+ font-size: 0.8em;
+}
+.search-section h2 {
+  padding:20px;
+}
+.container {
+  margin-top: 20px;
+}
+.admin-games, .new-game{
+  margin: 20px;
+  padding: 20px;
+}
+.admin-games h1, .new-game h1{
+  margin-bottom: 20px;
+}
+table{
+  border: 1px solid black;
+}
+form{
+  width: 40%;
+  padding:5px;
+}
+form button{
+  padding:5px;
+}
+.details-section img {
+  max-height: 600px;
+}

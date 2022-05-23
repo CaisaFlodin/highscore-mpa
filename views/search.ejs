@@ -1,0 +1,27 @@
+<section class="search-section">
+  <h2 class="text-center">Hittade <%= games.length %> träffar på "<%= searchTerm %>"
+  </h2>
+  <% games.forEach(game=> { %>
+    <div class="container">
+      <a href="/games/<%= game.url_slug %>">
+        <div class="search-card mb-3">
+          <div class="m-2 p-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="flex-start">
+                  <%= game.title %>
+                </h3>
+                <div class="d-flex">
+                  <p>
+                    <%= game.genre %>, <%= game.launch_year %>
+                  </p>
+                </div>
+              </div>
+              <img src="<%= game.image_url %>" width="150px" height="130px" class="flex-end"></img>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <% }) %>
+</section>

@@ -1,0 +1,62 @@
+<!-- <section class="details-section row mb-4">
+  <img src="<%= game.image_url %>" class="d-block col-5" alt="" />
+  <div class="game-details col-7">
+    <h1 class="mb-3">
+      <%= game.title %>
+    </h1>
+    <div class="mb-3">
+      <%= game.launch_year %>, <%= game.genre %>
+    </div>
+    <div class="game-description mb-3">
+      <%= game.description %>
+    </div>
+  </div>
+  <h2 class="text-center my-3">Highscores</h2>
+  <div class="score-list row mx-auto">
+    <% scores.forEach(score=> { %>
+      <div class="score-card mb-2 d-flex justify-content-between">
+        <p>
+          <%= score.player%>, <%= score.score_date%>
+        </p>
+        <p>
+          <%= score.highscore%>
+        </p>
+      </div>
+      <% }) %>
+  </div>
+
+</section> -->
+<section class="details-section row mb-4">
+  <img src="<%= game.image_url %>" class="d-block col-5" alt="" />
+  <div class="game-details col-7">
+    <h1>
+      <%= game.title %>
+    </h1>
+    <div class="game-info mb-3">
+      <%= game.launch_year %>, <%= game.genre %>
+    </div>
+    <div class="game-description mb-3">
+      <%= game.description %>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="text-center my-3">Highscores</h2>
+    <% scores.forEach(score=> { %>
+      <div>
+        <div class="score-card">
+          <div class="m-2 p-2">
+            <div class="d-flex justify-content-between">
+              <p class="flex-start">
+                <%= score.player%>, <%= score.score_date%>
+              </p>
+              <p class="flex-end">
+                <%= score.highscore%>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <% }) %>
+  </div>
+</section>

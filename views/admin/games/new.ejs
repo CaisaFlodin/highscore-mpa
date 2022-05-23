@@ -1,0 +1,42 @@
+<section class="new-game">
+  <h1>Nytt spel</h1>
+
+  <form method="post">
+    <div class="row mb-3">
+      <div class="col">
+        <label for="title">Titel</label>
+        <input type="text" name="title" id="title" class="form-control" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="description">Beskrivning</label>
+        <textarea name="description" id="description" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="imageUrl">Bild</label>
+        <input type="text" name="imageUrl" id="imageUrl" class="form-control" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="genre">Genre</label>
+        <select name="genre" id="genre" class="form-control">
+          <option value="arcade">Arcade</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="platform">Platform</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <label for="launchYear">Lanseringsår</label>
+        <input type="number" name="launchYear" id="launchYear" class="form-control" />
+      </div>
+    </div>
+    <button>Lägg till</button>
+  </form>
+</section>
